@@ -1,0 +1,16 @@
+How to use: 
+
+I have zipped all my java files used to make the corpus in the "corpus" folder, you can either unzip that or replace it with your own java files, but that folder is where you will put them.
+
+For the java file to be modified, you can either modify the hard coded link to the input directory, or just put your file in there and run it.
+
+When you are ready to run it, type:
+
+run: python3 ngram.py [n] 
+ - n is the number of tokens to use in the context to create the model.
+
+
+example: python3 ngram.py 3
+ - this would create a model to exaluate 3 tokens at a time.
+
+ Your output will be stored a filed called: processed_tokenized_java.txt where you will be able to see the original line, the modified line, and every prediction with the top 3 probable options.
